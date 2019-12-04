@@ -20,12 +20,40 @@ router.get('/', (req, res) => {
     })
 })
 
-router.get('/:id', (req, res) => {
-    console.log('hit a dynamic route!')
-    console.log(req.params.id);
-    // res.render('errorPage')
+router.get('/contact', (req, res) => {
+    // should really get the user data here and then fetch it thru, but let's try this asynchronously
+    console.log('at the contact route');
 
-let query = `SELECT * FROM tbl_bio WHERE profID="${req.params.id}"`;
+    res.render('contact');
+})
+
+router.get('/about', (req, res) => {
+    // should really get the user data here and then fetch it thru, but let's try this asynchronously
+    console.log('at the contact route');
+
+    res.render('about');
+})
+
+router.get('/portfolio', (req, res) => {
+    // should really get the user data here and then fetch it thru, but let's try this asynchronously
+    console.log('at the contact route');
+
+    res.render('portfolio');
+})
+
+router.get('/portfolio/mograph', (req, res) => {
+    // should really get the user data here and then fetch it thru, but let's try this asynchronously
+    console.log('at the contact route');
+
+    res.render('mograph');
+})
+
+// router.get('/:id', (req, res) => {
+//     console.log('hit a dynamic route!')
+//     console.log(req.params.id);
+//     // res.render('errorPage')
+
+// let query = `SELECT * FROM tbl_bio WHERE profID="${req.params.id}"`;
 
 // sql.query(query, (err, result) => {
 //     if (err) { throw err; console.log(err); }
@@ -47,6 +75,6 @@ let query = `SELECT * FROM tbl_bio WHERE profID="${req.params.id}"`;
     
 // })
     
-})
+// })
 
 module.exports = router;

@@ -7,18 +7,18 @@ router.get('/', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
 
-    let query = "SELECT * FROM tbl_mograph";
+    // let query = "SELECT * FROM tbl_mograph";
 
-    sql.query(query, (err, result) => {
-        if (err) { throw err; console.log(err); }
+    // sql.query(query, (err, result) => {
+    //     if (err) { throw err; console.log(err); }
 
-        // console.log(result); // should see objects wrapped in an array
+    //     // console.log(result); // should see objects wrapped in an array
 
-        // render the home view with dynamic data
+    //     // render the home view with dynamic data
        
         
-    }) 
-    res.render('home' ,  { item: result });
+    // }) 
+    res.render('home');
 })
 
 router.get('/contact', (req, res) => {

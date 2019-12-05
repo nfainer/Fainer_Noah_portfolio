@@ -1,5 +1,5 @@
 const config = {
-    host: "cleardb.net piece",
+    host: "cleardb.net",
     port: 8889, // 8889 for mac
     uname: "bd1bc3782ed8e8",
     pword: "03e9d5eb", // leave blank for windows

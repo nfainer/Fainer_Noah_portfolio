@@ -86,9 +86,18 @@ ul{
 
 .center-pannels{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
+}
 
+@media only screen and (max-width: 768px){
+    .center-pannels{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 .pannels{
@@ -159,7 +168,7 @@ padding: 20px;
 
 :root {
     font-size: calc(10px + 1vmin);
-    --primary: hsl(260, 100%, 60%);
+    --primary: hsl(0, 0%, 0%);
     --softGrey: #9a97a8;
     --bounce: 0.3s cubic-bezier(0.3, -0.1, 0.5, 1.4);
     --ease: 0.2s cubic-bezier(0.3, 0.1, 0.3, 1);
@@ -174,7 +183,7 @@ padding: 20px;
   }
   
   label {
-    --weight: .2rem;
+    --weight: .19rem;
     --size: 3.2em;
     position: relative;
     display: grid;
@@ -237,5 +246,8 @@ padding: 20px;
     right: calc(var(--size) * -0.16);
     transition: width var(--ease) 0.1s, right var(--bounce);
   }
+
+
+
   
 

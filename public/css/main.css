@@ -183,7 +183,7 @@ padding: 20px;
     opacity: 0.001;
   }
   
-  label {
+  #hamburger-label {
     --weight: .19rem;
     --size: 3.2em;
     position: relative;

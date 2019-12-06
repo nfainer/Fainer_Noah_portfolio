@@ -2,6 +2,10 @@ body{
     margin: 0;
 }
 
+.hide-me{
+    display: none;
+}
+
 .box-helper{
     text-align: center;
     height:20px;
@@ -16,6 +20,10 @@ header{
 #hamburger-menu{
 position: absolute;
 padding:3px;
+--primary: hsl(0, 0%, 0%);
+--softGrey: #9a97a8;
+--bounce: 0.3s cubic-bezier(0.3, -0.1, 0.5, 1.4);
+--ease: 0.2s cubic-bezier(0.3, 0.1, 0.3, 1);
 }
 
 #social-links{
@@ -166,13 +174,6 @@ padding: 20px;
 
 /* hmburger menu here */
 
-:root {
-    font-size: calc(10px + 1vmin);
-    --primary: hsl(0, 0%, 0%);
-    --softGrey: #9a97a8;
-    --bounce: 0.3s cubic-bezier(0.3, -0.1, 0.5, 1.4);
-    --ease: 0.2s cubic-bezier(0.3, 0.1, 0.3, 1);
-  }
   
 
   
@@ -247,7 +248,120 @@ padding: 20px;
     transition: width var(--ease) 0.1s, right var(--bounce);
   }
 
+/* hamburger menue ends here */
 
+  .page-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    background-color: blueviolet;
+}
+.separate{
+    height:50px;
+}
+
+
+
+form {
+    display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: center;
+}
+
+  .contact-form-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+  #portfolio-menu{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-pannel{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+/* video section */
+
+.video-description{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: left;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.about-section{
+    padding: 50px;
+}
+
+#skills-logos-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-logo{
+    padding: 50px;
+    border: solid;
+    margin: 10px;
+}
+
+
+/* animations here  */
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+/* anianmation end here */
 
   
 

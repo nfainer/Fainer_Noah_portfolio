@@ -78,9 +78,9 @@ router.get('/portfolio', (req, res) => {
     res.render('portfolio');
 })
 
-router.get('/portfolio/mograph', (req, res) => {
+router.get('/mograph', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
-    console.log('at the contact route');
+    console.log('at the mograph route');
 
     res.render('mograph');
 })

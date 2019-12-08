@@ -3,7 +3,7 @@ const router = express.Router();
 var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
 
-const sql = require('../utils/sql');
+const connect = require('../utils/sql');
 
 // set up the nodemailer stuff
 const transporter = mailer.createTransport({
@@ -14,23 +14,50 @@ const transporter = mailer.createTransport({
 	}
 });
 
+
 router.get('/', (req, res) => {
-    // should really get the user data here and then fetch it thru, but let's try this asynchronously
-    console.log('at the main route');
 
-    // let query = "SELECT * FROM tbl_mograph";
+    // get the connection via the connection pool, and then run the query -> just one added step
+    connect.getConnection((err, connection) => {
+		if (err) { return console.log(err); }
 
-    // sql.query(query, (err, result) => {
-    //     if (err) { throw err; console.log(err); }
+		let query = 'SELECT * FROM tbl_home';
 
-    //     // console.log(result); // should see objects wrapped in an array
+		connect.query(query, (err, rows) => {
+			connection.release(); // send this connection back to the pool
 
-    //     // render the home view with dynamic data
-       
-        
-    // }) 
-    res.render('home');
+			if (err) {
+				// will exit the function and log the error
+				return console.log(err.message);
+			}
+
+			console.log(rows); // this should be your database query result
+
+			// render our page
+			res.render('home', {data: rows}); // whatever page and data you're rendering
+		});
+	});
 })
+
+// router.get('/', (req, res) => {
+//     // should really get the user data here and then fetch it thru, but let's try this asynchronously
+//     console.log('at the main route');
+
+//     let query = "SELECT * FROM tbl_home";
+
+//     sql.query(query, (err, result) => {
+// 		if (err) { throw err; console.log(err); 
+// 		} else {
+// 		console.log(result); // should see objects wrapped in an array
+
+//         // render the home view with dynamic data
+       
+//         res.render('home', {result});
+// 		}
+
+//     }) 
+    
+// })
 
 router.post('/mail', (req, res) => {
 	console.log('hit mail route');

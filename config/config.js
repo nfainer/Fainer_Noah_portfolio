@@ -1,9 +1,11 @@
 const config = {
-    host: "cleardb.net",
-    port: 8889, // 8889 for mac
-    uname: "bd1bc3782ed8e8",
-    pword: "03e9d5eb", // leave blank for windows
-    database: "heroku_8be51b0d42b7d10?"
+    host: "us-cdbr-iron-east-05.cleardb.net",
+    // port: 8889, // 8889 for mac
+    user: "b880ecb1a39fec",
+    password: "bec7d1ea", // leave blank for windows
+    database: "heroku_743470523a1d2ef"
 }
 
 module.exports = config;
+
+// /Applications/MAMP/Library/bin/mysql -u b880ecb1a39fec -h us-cdbr-iron-east-05.cleardb.net -p heroku_743470523a1d2ef < /Users/noahfainer/Desktop/db_portfolio.sql

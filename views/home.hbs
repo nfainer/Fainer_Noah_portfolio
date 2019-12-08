@@ -1,6 +1,8 @@
  <section id="video-section">
     <div id="video">
-        <video src="videos/demoReel.mp4" muted autoplay loop></video>
+        {{#with item.[3]}}
+        <video src="videos/{{link}}" muted autoplay loop></video>
+        {{/with}}
     </div>
  </section>
 
@@ -11,18 +13,24 @@
 
      <div class="center-pannels">
         <div class="pannels">
-            <img src="images/camera.png" alt="camera icon" class="pannel-icon">
-            <p class="pannel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem possimus alias, debitis iusto impedit accusantium modi rerum delectus beatae earum.</p>
+            {{#with item.[0]}}
+            <img src="images/{{link}}" alt="camera icon" class="pannel-icon">
+            <p class="pannel-text">{{description}}</p>
+            {{/with}}
             <a href="#" class="pannel-button">Photography ►</a>
         </div>
         <div class="pannels">
-            <img src="images/video-camera.png" alt="video icon" class="pannel-icon">
-            <p class="pannel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem possimus alias, debitis iusto impedit accusantium modi rerum delectus beatae earum.</p>
+            {{#with item.[1]}}
+            <img src="images/{{link}}" alt="video icon" class="pannel-icon">
+            <p class="pannel-text">{{description}}</p>
+            {{/with}}
             <a href="#" class="pannel-button">Videography ►</a>
         </div>
         <div class="pannels">
-            <img src="images/web-startup.png" alt="graphics icon" class="pannel-icon">
-            <p class="pannel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem possimus alias, debitis iusto impedit accusantium modi rerum delectus beatae earum.</p>
+            {{#with item.[2]}}
+            <img src="images/{{link}}" alt="graphics icon" class="pannel-icon">
+            <p class="pannel-text">{{description}}</p>
+            {{/with}}
             <a href="#" class="pannel-button">Motion Graphics ►</a>
         </div>
      </div>
@@ -35,11 +43,12 @@
         </div>
 
         <div id="brand-logo-section">
-            <div><img src="images/dreamCulture.png" alt="dream culture"></div>
-            <div><img src="images/dreamsFestival.png" alt="dream culture"></div>
-            <div><img src="images/hashtagHealth.png" alt="dream culture"></div>
-            <div><img src="images/uwo.png" alt="dream culture"></div>
-            <div><img src="images/lifetimesliving.png" alt="dream culture"></div>
+            <div>{{#with item.[4]}}<img src="images/{{link}}" alt="dream culture">{{/with}}</div>
+            <div>{{#with item.[5]}}<img src="images/{{link}}" alt="dream culture">{{/with}}</div>
+            <div>{{#with item.[6]}}<img src="images/{{link}}" alt="dream culture">{{/with}}</div>
+            <div>{{#with item.[7]}}<img src="images/{{link}}" alt="dream culture">{{/with}}</div>
+            <div>{{#with item.[8]}}<img src="images/{{link}}" alt="dream culture">{{/with}}</div>
+    
             
     
 

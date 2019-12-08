@@ -630,3 +630,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11112a', end
 #selfie{
     margin-bottom: 20px;
 }
+
+#mograph-demoReel{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}

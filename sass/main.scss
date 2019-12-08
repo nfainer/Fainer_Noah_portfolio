@@ -388,7 +388,6 @@ form {
 	align-items: flex-start;
 	align-items: left;
 	flex-direction: column;
-	padding: 80px;
 }
 .about-section {
 	padding: 50px;
@@ -475,8 +474,13 @@ input[type=email] {
 	overflow: hidden;
 	justify-content: center;
 	align-items: center;
-	height: auto;
+	height: 54vw;
 }
+
+#mograph-body {
+    padding: 50px;
+}
+
 @media only screen and (max-width: 768px) {
 	.center-pannels {
 		display: flex;

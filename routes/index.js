@@ -3,7 +3,7 @@ const router = express.Router();
 var auth = require('../config/mailcreds');
 var mailer = require('nodemailer');
 
-const sql = require('../utils/sql');
+const connect = require('../utils/sql');
 
 // set up the nodemailer stuff
 const transporter = mailer.createTransport({

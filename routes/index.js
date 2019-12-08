@@ -34,7 +34,7 @@ router.get('/', (req, res) => {
 			console.log(rows); // this should be your database query result
 
 			// render our page
-			res.render('home', {data: rows}); // whatever page and data you're rendering
+			res.render('home', {item: rows}); // whatever page and data you're rendering
 		});
 	});
 })

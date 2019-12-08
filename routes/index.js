@@ -21,13 +21,15 @@ router.get('/', (req, res) => {
     let query = "SELECT * FROM tbl_home";
 
     sql.query(query, (err, result) => {
-        // if (err) { throw err; console.log(err); }
-
-        console.log(result); // should see objects wrapped in an array
+		if (err) { throw err; console.log(err); 
+		} else {
+		console.log(result); // should see objects wrapped in an array
 
         // render the home view with dynamic data
        
         res.render('home', {item: result});
+		}
+
     }) 
     
 })

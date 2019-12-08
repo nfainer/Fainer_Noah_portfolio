@@ -5,7 +5,7 @@
 </div>
 
 <div class="center-me">
-    <p>LOGO HERE</p>
+    <object data="images/logo.svg" type="image/svg+xml" id="logo-contact"></object>
 </div>
 
 <div class="center-me">
@@ -15,21 +15,18 @@
 
 
 <section class="contact-form-section">
-    <form action="data/contact.php" method="post">
-        <div>
-                <label for="name">Please enter your name (optional)</label>
-                <input type="text" name="company">
+    <form action="data/contact.php" method="post" id="form-section">
+        <div class="form">
+                <input type="text" name="company" placeholder="Name">
         </div>
-        <div>
-            <label for="usermail">Please enter your email address:</label>
-            <input type="email" name="usermail" required>
+        <div class="form">
+            <input type="email" name="usermail" required placeholder="E-mail">
         </div>
-        <div>
-            <label for="message">Please enter your message:</label>
-            <textarea name="message" id="user-message" cols="30" rows="10"></textarea>
+        <div class="form">
+            <textarea name="message" id="user-message" placeholder="Message"></textarea>
         </div>
-        <div>
-            <input type="submit" value="Send!" class="submit-button">
+        <div class="form">
+            <input type="submit" value="Submit" class="submit-button">
         </div>
     </form>
 </section>

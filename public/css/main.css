@@ -92,24 +92,23 @@ padding:3px;
 
 
 
-li {
+ul a{
     cursor: pointer;
     display: flex;
     justify-content: center;
     flex: 1;
-    padding: 5px;
-    background-color: #000000cf;
+    background-color: #190e1bd3;
     transition: 0.4s;
 }
 
-li:hover {
-    background-color: #343434f2;
+.nav-button:hover {
+    background-color: rgba(110, 110, 110, 0.74);
 }
 
-li a {
+.nav-button {
     display: block;
     color: #fff;
-    padding: 2px;
+    padding: 4px;
     font-size: 13px;
     transition: 0.4s;
     letter-spacing: 1px;
@@ -120,6 +119,7 @@ li a:hover{
 }
 
 ul{
+    list-style-type:none;
     padding: 0;
     margin: 0;
 }
@@ -127,6 +127,7 @@ ul{
 #main-navigation{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #video-section{

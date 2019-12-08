@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 05, 2019 at 02:24 AM
+-- Generation Time: Dec 08, 2019 at 06:50 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -23,24 +23,38 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_mograph`
+-- Table structure for table `tbl_home`
 --
 
-CREATE TABLE `tbl_mograph` (
+CREATE TABLE `tbl_home` (
   `ID` int(11) NOT NULL,
-  `title` varchar(20) NOT NULL,
-  `description` varchar(500) NOT NULL,
-  `video` int(20) NOT NULL
+  `link` varchar(20) NOT NULL,
+  `description` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_home`
+--
+
+INSERT INTO `tbl_home` (`ID`, `link`, `description`) VALUES
+(1, 'camera.png', 'Here is where I showcase all of my photography work. Click the link below to explore some of my work across a variety of different categories.'),
+(2, 'video-camera.png', 'Check out some of my videography work by clicking the link below. Here you can find an assortment of client and personal projects that I have created.'),
+(3, 'web-startup.png', 'Browse through some of my stunning motion graphics content. Here you can find 2D and 3D motion graphics. '),
+(4, 'demoReel.mp4', 'demo reel for home page'),
+(5, 'dreamCulture.png', ''),
+(6, 'dreamsFestival.png', ''),
+(7, 'hashtagHealth.png', ''),
+(8, 'uwo.png', ''),
+(9, 'lifetimesliving.png', '');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tbl_mograph`
+-- Indexes for table `tbl_home`
 --
-ALTER TABLE `tbl_mograph`
+ALTER TABLE `tbl_home`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -48,10 +62,10 @@ ALTER TABLE `tbl_mograph`
 --
 
 --
--- AUTO_INCREMENT for table `tbl_mograph`
+-- AUTO_INCREMENT for table `tbl_home`
 --
-ALTER TABLE `tbl_mograph`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tbl_home`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

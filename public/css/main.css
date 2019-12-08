@@ -420,7 +420,7 @@ align-items: center;
 }
 
 .portfolio-pannel img:hover{
-    filter: brightness(0.7);
+    filter: brightness(0.7) blur(2px);
     transform: scale(1.1);
 }
 

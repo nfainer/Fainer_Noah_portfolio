@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
     let query = "SELECT * FROM tbl_home";
 
     sql.query(query, (err, result) => {
-        if (err) { throw err; console.log(err); }
+        // if (err) { throw err; console.log(err); }
 
         console.log(result); // should see objects wrapped in an array
 

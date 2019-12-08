@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
 
         // render the home view with dynamic data
        
-        res.render('home');
+        res.render('home', {item: result});
     }) 
     
 })

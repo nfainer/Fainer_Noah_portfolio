@@ -1,5 +1,32 @@
 body{
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1  {
+    font-family: ltc-broadway, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    font-family: montserrat, sans-serif;
+
+font-weight: 200;
+
+font-style: normal;
+}
+
+p{
+
+    font-family: montserrat, sans-serif;
+
+font-weight: 200;
+
+font-style: normal;
 }
 
 .hide-me{
@@ -13,8 +40,13 @@ body{
     background-color: black;
 }
 header{
+    text-align: center;
     position: fixed;
+    height: 58px;
     width: 100%;
+    -webkit-box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
 }
 
 #hamburger-menu{
@@ -28,11 +60,17 @@ padding:3px;
 
 #social-links{
     position: absolute;
-right: 0;
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding: 7px;
+    right: 0;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-around;
+    display: flex;
+    width: 10%;
+}
+
+#social-links img{
+
+    width: 85%;
 }
 
 #social-links p {
@@ -43,19 +81,42 @@ padding: 7px;
 #logo-wrapper{
     display: flex;
     justify-content: center;
-    background-color: coral;
+    background-color: #fff;
 }
 
+#logo{
+    width: 290px;
+    padding: 5px;
+    transform: none;
+}
+
+
+
 li {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     flex: 1;
     padding: 5px;
-    background-color: darkcyan;
+    background-color: #000000cf;
+    transition: 0.4s;
+}
+
+li:hover {
+    background-color: #343434f2;
 }
 
 li a {
     display: block;
+    color: #fff;
+    padding: 2px;
+    font-size: 13px;
+    transition: 0.4s;
+    letter-spacing: 1px;
+}
+
+li a:hover{
+    font-size: 11px;
 }
 
 ul{
@@ -72,31 +133,54 @@ ul{
     display: flex;
     justify-content: center;
     flex: 1;
-    background-color: darkkhaki;
+    margin-bottom: 30px;
 }
 
 #video{
     display: flex;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
-    height: 720px;
+    height: auto;
+    -webkit-box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+}
+
+#video video{
+    z-index: -1;
+    filter: brightness(0.35);
 }
 
 .center-me{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
+    text-align: center;
 }
 
 #lets-work-together{
-    background-color: darkorchid;
+    background-color: #fff;
 }
 
 .center-pannels{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: center;
+    color:  #fff;
+    padding: 0 30px 0 30px;
+}
+.pannels{
+
+    -webkit-box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+}
+
+.pannel-button{
+    color: #fff;
+    margin-top:10px;
 }
 
 @media only screen and (max-width: 768px){
@@ -105,6 +189,13 @@ ul{
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+        
+    }
+
+    #logo{
+        width: 290px;
+        padding: 5px;
+        transform: scale(0.7);
     }
 }
 
@@ -115,7 +206,12 @@ ul{
     flex-direction: column;
     padding: 30px;
     margin: 40px;
-    background-color: darkturquoise;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#11112a+0,463658+100 */
+    background: #11112a; /* Old browsers */
+    background: -moz-linear-gradient(top, #11112a 0%, #463658 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #11112a 0%,#463658 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #11112a 0%,#463658 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11112a', endColorstr='#463658',GradientType=0 ); /* IE6-9 */
 }
 
 #brand-logo-section{
@@ -129,8 +225,20 @@ align-items: center;
 
 }
 
+#brand-logo-section div img{
+    width: 100%;
+}
+
+#brand-logo-section div{
+    padding: 40px;
+}
+
 #brand-ive-worked-with{
-    background-color: deeppink;
+    background-color: #fff;
+}
+
+#brand-logo-section img{
+   
 }
 
 .brand-logo{
@@ -147,16 +255,21 @@ margin: 10px;
 
 
 footer{
+    color: #ffffff;
+    text-align: center;
 
-    background-color: red;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#11112a+0,463658+100 */
+background: #11112a; /* Old browsers */
+background: -moz-linear-gradient(top, #11112a 0%, #463658 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #11112a 0%,#463658 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #11112a 0%,#463658 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11112a', endColorstr='#463658',GradientType=0 ); /* IE6-9 */
 }
 
 #contact-footer{
     display: flex;
-
     justify-content: space-around;
-    
-    align-items: center;
+    padding-top: 30px;
 }
 
 .contact-info{
@@ -167,7 +280,7 @@ footer{
 #copyright{
     text-align: center;
     margin: 0;
-padding: 20px;
+padding-bottom: 20px;
 }
 
 

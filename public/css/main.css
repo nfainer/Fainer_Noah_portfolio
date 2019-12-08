@@ -502,7 +502,7 @@ align-items: center;
     align-items: flex-start;
     align-items: left;
     flex-direction: column;
-    padding: 50px;
+    padding: 80px;
 }
 
 .about-section{
@@ -632,6 +632,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11112a', end
 }
 
 #mograph-demoReel{
+    position: relative;
+    overflow: hidden;
     display: flex;
     width: 100%;
     overflow: hidden;

@@ -39,26 +39,6 @@ router.get('/', (req, res) => {
 	});
 })
 
-// router.get('/', (req, res) => {
-//     // should really get the user data here and then fetch it thru, but let's try this asynchronously
-//     console.log('at the main route');
-
-//     let query = "SELECT * FROM tbl_home";
-
-//     sql.query(query, (err, result) => {
-// 		if (err) { throw err; console.log(err); 
-// 		} else {
-// 		console.log(result); // should see objects wrapped in an array
-
-//         // render the home view with dynamic data
-       
-//         res.render('home', {result});
-// 		}
-
-//     }) 
-    
-// })
-
 router.post('/mail', (req, res) => {
 	console.log('hit mail route');
 	console.log('body: ', req.body);
@@ -112,33 +92,19 @@ router.get('/mograph', (req, res) => {
     res.render('mograph');
 })
 
-// router.get('/:id', (req, res) => {
-//     console.log('hit a dynamic route!')
-//     console.log(req.params.id);
-//     // res.render('errorPage')
+router.get('/photography', (req, res) => {
+    // should really get the user data here and then fetch it thru, but let's try this asynchronously
+    console.log('at the photography route');
 
-// let query = `SELECT * FROM tbl_bio WHERE profID="${req.params.id}"`;
+    res.render('photography');
+})
 
-// sql.query(query, (err, result) => {
-//     if (err) { throw err; console.log(err); }
+router.get('/concert', (req, res) => {
+    // should really get the user data here and then fetch it thru, but let's try this asynchronously
+    console.log('at the photography route');
 
-//     console.log(result); // should see objects wrapped in an array
+    res.render('concert');
+})
 
-//     // turn our social property into an array - its just text in the DB
-//     // which isnt really anything we can work with
-    
-    
-//     result[0].social = result[0].social.split(",").map(function(item) {
-//     item = item.trim(); // remove the extra spaces from each word
-//     return item;
-
-//     });
-
-//     // send the DB query back to the browser
-//     res.json(result);
-    
-// })
-    
-// })
 
 module.exports = router;

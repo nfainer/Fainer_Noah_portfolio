@@ -150,8 +150,8 @@ li {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding: 30px;
-	margin: 40px;
+	padding: 45px;
+	margin: 20px;
 	background: #11112a;
 	background: -moz-linear-gradient(top, #11112a 0%, #463658 100%);
 	background: -webkit-linear-gradient(top, #11112a 0%,#463658 100%);
@@ -387,8 +387,8 @@ form {
 }
 
 .pannel-text {
-	padding: 40px;
-    line-height: 26px;
+	padding: 20px;
+    line-height: 16px;
     font-size: 16px;
     text-align: center;
 }
@@ -544,4 +544,105 @@ input[type=email] {
     -webkit-transform: none;
     transform: none;
     }
-    } 
+	} 
+	
+	#photography-section{
+		display:flex;
+		height: 61vw;
+	}
+
+	.concert-page-container{
+		display: grid;
+		grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+		padding: 10vw;
+	}
+
+	.dreams-img{
+		width: 100%;
+	}
+
+	.dreams-img[value="1"]{
+		grid-row: 1 / span 2;
+		grid-column: 1 / span 2;
+	}
+
+	.dreams-img[value="2"]{
+		grid-row: 2 / span 1;
+		grid-column: 2 / span 2;
+		z-index: 1;
+		transform: translatey(12vw);
+	}
+
+	.dreams-img[value="3"]{
+		grid-row: 3 / span 1;
+		grid-column: 3 / span 3;
+		transform: scaleX(-1);
+	}
+
+	.dreams-img[value="4"]{
+		grid-row: 3 / span 1;
+		grid-column: 1 / span 2;
+		transform: translatey(-12vw);
+	}
+
+	.dreams-img[value="5"]{
+		grid-row: 3 / span 1;
+		grid-column: 2 / span 2;
+		z-index: 1;
+		transform: translateX(4vw) translateY(18vw) scale(1.4);
+	}
+
+	.dreams-img[value="6"]{
+		grid-row: 3 / span 2;
+		grid-column: 3 / span 2;
+		transform: translateX(16vw) scale(0.9);
+	}
+
+	#dreams-text{
+		grid-row: 1 / span 1;
+		grid-column: 3 / span 3;
+		padding: 3vw;
+		line-height: 30px;
+	}
+
+	.purple-fest-img{
+		width:100%;
+	}
+
+	.purple-fest-img[value="1"]{
+		grid-row: 1 / span 1;
+		grid-column: 1 / span 2;
+	}
+	.purple-fest-img[value="2"]{
+		grid-row: 1 / span 1;
+		grid-column: 2 / span 1;
+		transform: translateX(12vw) translateY(-5vw);
+
+	}
+	.purple-fest-img[value="3"]{
+		grid-row: 3 / span 1;
+		grid-column: 3 / span 2;
+		transform: translateX(0vw) translateY(-10vw);
+
+	}
+	.purple-fest-img[value="4"]{
+		grid-row: 1 / span 1;
+		grid-column: 4 / span 2;
+
+	}
+
+	.purple-fest-img[value="5"]{
+		grid-row: 1 / span 1;
+		grid-column: 4 / span 2;
+		transform: translatey(28vw);
+
+	}
+
+	.purple-fest-text{
+		grid-row: 1 / span 1;
+		grid-column: 1 / span 3;
+		padding: 2vw;
+		line-height: 30px;
+
+	}
+

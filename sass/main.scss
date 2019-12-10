@@ -359,6 +359,8 @@ form {
 
 
 	div p {
+		margin: 0;
+		font-size: 17px;
 		text-align: center;
 		position: absolute;
 		color: #fff;
@@ -523,6 +525,10 @@ input[type=email] {
 			}
 		}
 	}
+
+	div p{
+
+	}
 }
 
 .fadeInDown {
@@ -656,5 +662,9 @@ input[type=email] {
 		padding: 2vw;
 		line-height: 30px;
 
+	}
+
+	.wrap-text{
+		float: left;
 	}
 

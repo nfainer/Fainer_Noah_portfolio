@@ -308,6 +308,7 @@ label {
 .page-title {
 	display: flex;
 	justify-content: center;
+	text-align: center;
 	align-items: center;
 	height: 220px;
 	background-color: #fff;
@@ -509,6 +510,7 @@ input[type=email] {
 
 @media only screen and (max-width: 768px) {
 
+
 	#contact-footer{
 		font-size: 9px;
 	}
@@ -596,7 +598,18 @@ input[type=email] {
 
 	.dreams-img[value="1"]{
 		grid-row: 1 / span 2;
-		grid-column: 1 / span 2;
+		grid-column: 1 / span 6;
+	}
+
+	.dreams-img[value="1"] img{
+		width: 50%;
+		float: left;
+		padding: 20px 27px 20px 20px;
+	}
+
+	.dreams-img[value="1"] p{
+		margin-bottom:100px;
+		line-height: 27px;
 	}
 
 	.dreams-img[value="2"]{
@@ -660,14 +673,21 @@ input[type=email] {
 	}
 	.purple-fest-img[value="4"]{
 		grid-row: 1 / span 1;
-		grid-column: 4 / span 2;
+		grid-column: 1 / span 6;
 
+	}
+
+	.purple-fest-img[value="4"] img{
+		float: right;
+
+		padding: 0 0 10px 50px;
+		width: 50%;
 	}
 
 	.purple-fest-img[value="5"]{
 		grid-row: 1 / span 1;
 		grid-column: 4 / span 2;
-		transform: translatey(28vw);
+		transform: translatey(44vw) translateX(-25px);
 
 	}
 
@@ -676,6 +696,7 @@ input[type=email] {
 		grid-column: 1 / span 3;
 		padding: 2vw;
 		line-height: 30px;
+		margin-bottom: 80px;
 
 	}
 

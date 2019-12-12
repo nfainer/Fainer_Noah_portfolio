@@ -191,7 +191,7 @@ li {
 }
 
 #contact-footer {
-	font-size: 24px;
+	font-size: 14px;
 	display: flex;
 	justify-content: space-around;
 	padding-top: 30px;
@@ -203,6 +203,7 @@ li {
 #copyright {
 	text-align: center;
 	margin: 0;
+	font-size: 12px;
 	padding-bottom: 20px;
 }
 input[type="checkbox"] {
@@ -480,6 +481,7 @@ input[type=email] {
 }
 .submit-button {
 	cursor: pointer;
+	border: none;
 	text-align: center;
 	color: #fff;
 	margin: 10px;
@@ -666,9 +668,9 @@ input[type=email] {
 
 	}
 	.purple-fest-img[value="3"]{
-		grid-row: 3 / span 1;
-		grid-column: 3 / span 2;
-		transform: translateX(0vw) translateY(-10vw);
+		grid-row: 3 / span 2;
+		grid-column: 3 / span 3;
+		transform: translateX(-15vw) translateY(-10vw);
 
 	}
 	.purple-fest-img[value="4"]{
@@ -687,7 +689,7 @@ input[type=email] {
 	.purple-fest-img[value="5"]{
 		grid-row: 1 / span 1;
 		grid-column: 4 / span 2;
-		transform: translatey(44vw) translateX(-25px);
+		transform: translatey(44vw) translateX(-17px);
 
 	}
 

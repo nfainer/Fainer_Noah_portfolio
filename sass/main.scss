@@ -706,3 +706,34 @@ input[type=email] {
 		float: left;
 	}
 
+
+	// END OF CONCERT PAGE SECTION
+
+
+	// GRAPHICS DESIGN PAGE STARTS HERE
+
+.gd-main-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gd-img-wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+
+ img {
+	margin: 40px;
+	-webkit-box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 35px -4px rgba(0,0,0,0.75);
+	
+
+} &:hover {
+	transition: 1s;
+	transform: scale(1.02);
+}
+}
+
+

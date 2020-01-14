@@ -113,6 +113,13 @@ router.get('/videography', (req, res) => {
     res.render('videography');
 })
 
+router.get('/graphicsdesign', (req, res) => {
+    // should really get the user data here and then fetch it thru, but let's try this asynchronously
+    console.log('at the photography route');
+
+    res.render('graphicsdesign');
+})
+
 
 
 module.exports = router;

@@ -71,7 +71,8 @@ ul {
 		display: flex;
 		justify-content: center;
 		flex: 1;
-		background-color: #190e1bd3;
+		// background-color: #190e1bd3;
+		background: linear-gradient(0deg, #020024 0%, #18082d 100%);
 		transition: 0.4s;
 	}
 	list-style-type: none;
@@ -80,8 +81,7 @@ ul {
 }
 .nav-button {
 	&:hover {
-		background-color: rgba(19, 12, 31, 0.932);
-		font-size: 12px;
+		background-color: rgba(86, 81, 94, 0.932);
 	}
 	display: block;
 	height: 16px;
@@ -522,7 +522,8 @@ input[type=email] {
 	.nav-button{
 		padding: 34px;
 		background: rgb(2,0,36);
-		background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(24,8,45,1) 100%);
+		width: 100%;
+		background: linear-gradient(0deg, #020024c9 0%, #18082de6 100%);
 	}
 
 

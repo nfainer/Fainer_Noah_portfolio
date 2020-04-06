@@ -515,6 +515,16 @@ input[type=email] {
 
 @media only screen and (max-width: 768px) {
 
+	#main-navigation{
+		flex-direction: column;
+	}
+
+	.nav-button{
+		padding: 34px;
+		background: rgb(2,0,36);
+		background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(24,8,45,1) 100%);
+	}
+
 
 	#contact-footer{
 		font-size: 9px;
@@ -743,6 +753,11 @@ input[type=email] {
 //end of graphics design page
 
 // portrait page starts HERE
+
+#luminati-logo{
+	width:100%;
+	padding: 20px;
+}
 
 .portraits-page-container{
 	display: grid;
